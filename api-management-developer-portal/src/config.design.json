@@ -1,0 +1,8 @@
+{
+    "environment": "development",
+    "managementApiUrl": "https://m365-platform-api-management-poc.management.azure-api.net",
+    "managementApiAccessToken": "SharedAccessSignature integration&202203041046&ASOoS/NgEsnrF90AVTqm7RhjLNW/PdJnb5zdhllR1/Ew65iGtjXn7liFrjhO2sZNxlAdtVO+3gi1tDuR1hehug==",
+    "backendUrl": "https://m365-platform-api-management-poc.developer.azure-api.net/",
+    "useHipCaptcha": false
+}
+

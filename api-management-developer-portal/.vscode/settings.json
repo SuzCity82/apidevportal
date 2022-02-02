@@ -1,0 +1,36 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.vs": true,
+        "**/.vscode": true,
+        "**/.history": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/e2e/build": true,
+        "src/app/environment.module.ts": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.history": true,
+        "**/.vs": true,
+        "**/.vscode": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/e2e/build": true,
+        "src/app/environment.module.ts": true
+    },
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "mochaExplorer.files": ["tests/**/*.spec.ts", "src/**/*.spec.ts"],
+    "mochaExplorer.require": "./mocha",
+    "mochaExplorer.timeout": 30000,
+    "sfmt.insize": 4
+  
+}

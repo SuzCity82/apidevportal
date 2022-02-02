@@ -1,0 +1,5 @@
+{
+    "environment": "runtime",
+    "managementApiUrl": "https://m365-platform-api-management-poc.management.azure-api.net",
+    "backendUrl": "https://m365-platform-api-management-poc.developer.azure-api.net/"
+}
