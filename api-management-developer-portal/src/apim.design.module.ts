@@ -66,6 +66,9 @@ import { ApiProductsEditorModule } from "./components/apis/api-products/ko/apiPr
 import { RuntimeConfigurator } from "./services/runtimeConfigurator";
 import { CustomHtmlDesignModule } from "./components/custom-html/customHtml.design.module";
 import { CodeEditor } from "./components/code-editor/code-editor";
+import { ConferenceSessionDesignModule } from "../community/widgets/conference-session/widget.design.module";
+
+
 
 export class ApimDesignModule implements IInjectorModule {
     public register(injector: IInjector): void {
@@ -117,6 +120,7 @@ export class ApimDesignModule implements IInjectorModule {
         injector.bindModule(new ValidationSummaryModule());
         injector.bindModule(new SigninSocialEditorModule());
         injector.bindModule(new CustomHtmlDesignModule());
+        injector.bindModule(new ConferenceSessionDesignModule());
         injector.bindSingleton("app", App);
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindSingleton("tenantService", TenantService);
@@ -138,5 +142,6 @@ export class ApimDesignModule implements IInjectorModule {
         injector.bindToCollection("autostart", RuntimeConfigurator);
         injector.bindSingleton("sessionManager", DefaultSessionManager);
         injector.bind("CodeEditor", CodeEditor);
+        
     }
 }

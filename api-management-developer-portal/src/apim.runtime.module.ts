@@ -78,10 +78,12 @@ import { ApimSettingsProvider } from "./configuration/apimSettingsProvider";
 import { AccessTokenRefrsher } from "./authentication/accessTokenRefresher";
 import { Pagination } from "./components/pagination/pagination";
 import { OauthServerConfiguration } from "./components/operations/operation-details/ko/runtime/oauth-server-configuration";
+import { ConferenceSessionRuntimeModule } from "../community/widgets/conference-session/widget.runtime.module";
 
 
 export class ApimRuntimeModule implements IInjectorModule {
     public register(injector: IInjector): void {
+        injector.bindModule(new ConferenceSessionRuntimeModule());
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindToCollection("autostart", UnhandledErrorHandler);
         injector.bindToCollection("autostart", BalloonBindingHandler);
